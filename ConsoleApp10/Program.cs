@@ -151,12 +151,31 @@ namespace ConsoleApp10
                 Console.Write("                                            Student {0} : ", k);
                 grades1 = Convert.ToInt32(Console.ReadLine());
                 GradeList.Remove(grades1);
+
             }
         }
 
         static void EditGrade()
         {
             Console.WriteLine("You are Viewing [ Edit A Grade }");
+            Console.WriteLine("Enter the user index to change");
+            int userInput = Convert.ToInt32(Console.ReadLine());
+            GradeList.RemoveAt(userInput);
+            Console.WriteLine("Enter a new grade to add");
+            int userInput1 = Convert.ToInt32(Console.ReadLine());
+            GradeList.Add(userInput1);
+            
+
+
+
+
+
+
+
+
+
+
+
         }
 
         static void ShowBestGrade()
